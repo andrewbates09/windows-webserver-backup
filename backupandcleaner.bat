@@ -93,9 +93,9 @@ FORFILES /P %TARGETDIR% /C "cmd /c if @isdir==FALSE ERASE /F /Q @file" /D -%OLDE
 
 echo. PROCESSFOLDERS >> %TARGETDIR%%BatchLog%
 
-::	lists all folders in the backup directory
+::  lists all folders in the backup directory
 FORFILES /P %TARGETDIR% /C "cmd /c if @isdir==TRUE echo. @path >> %TARGETDIR%%BatchLog%" /D -%OLDERTHAN%
-::	deletes all folders in the backup directory older than OLDERTHAN days
+::  deletes all folders in the backup directory older than OLDERTHAN days
 FORFILES /P %TARGETDIR% /C "cmd /c if @isdir==TRUE RMDIR /S /Q @fname" /D -%OLDERTHAN%
 
 
