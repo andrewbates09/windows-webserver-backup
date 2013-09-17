@@ -1,9 +1,9 @@
 ::****************************************
-::* File:		BACKUPANDCLEANER.BAT
-::* Author:		Andrew M Bates (andrewbates09)
-::* Summary:	Backup MySQL database, backup webroot directory
-::*				and clean out backups older than 5 days old
-::* NOTE:		Don't forget to add passwords and run as administrator - or won't work
+::* File:       BACKUPANDCLEANER.BAT
+::* Author:     Andrew M Bates (andrewbates09)
+::* Summary:    Backup MySQL database, backup webroot directory
+::*	            and clean out backups older than 5 days old
+::* NOTE:       Don't forget to add passwords and run as administrator - or won't work
 ::*             You will need to go through real quick and replace the following 
 ::*                 YOURMYSQLDB
 ::*                 YOURWEBDIR
